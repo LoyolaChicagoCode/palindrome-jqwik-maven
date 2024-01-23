@@ -24,11 +24,11 @@ public class PalindromeTables {
     assertEquals(result, Palindrome.isPalindrome(arg));
   }
 
-  // TODO test the other two palindrome checker methods with the same table
+  // TODO test the other two palindrome checkers with the same table
 
   // TODO create an additional table for case-insensitive testing
-  // and use it to test the other two palindrome checker methods
+  // and use it to test the other two palindrome checkers
 
-  // TODO create an additional table for testing with spaces ignored
+  // TODO create an additional table for case-insensitive testing with spaces ignored
   // and use it to test the isPalindromeIgnoreCaseAndSpaces
 }

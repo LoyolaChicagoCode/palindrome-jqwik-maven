@@ -27,6 +27,7 @@ public class PalindromeExamples {
     assertFalse(Palindrome.isPalindrome("lidar"));
   }
 
-  // TODO add the other rows from palindromeTable in the lecture notes 
-  // as individual examples as above
+  // TODO add various other individual positive and negative 
+  // examples based on radar, lidar, abba, and appl
+  // and testing all three palindrome checkers
 }
