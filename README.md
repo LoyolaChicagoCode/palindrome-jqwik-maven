@@ -76,8 +76,8 @@ Succinctly answer the following questions in a separate document called Answer.m
 ## Grading
 
 - 2 NFRs
-- 1.5 for the three palindrome checker methods
-- 0.5 invoke the additional two checkers in main
+- 1.5 three palindrome checker methods
+- 0.5 invoke additional two checkers in main
 - 1.5 additional example-based tests
 - 1.5 additional tables for data-driven tests
 - 1 additional properties
