@@ -7,7 +7,19 @@ import net.jqwik.api.constraints.*;
 
 public class PalindromeProperties {
 
-  // TODO define various properties
+  // example: all strings of length 1 are palindromes
+  @Property
+  boolean allSingleCharStringsArePalindromes(@ForAll @StringLength(1) final String s) {
+    return Palindrome.isPalindrome(s);
+  }
 
-  // TODO extra credit: generator
+  // TODO define various properties here
+
+  // TODO property stating that all strings of length 2 
+  // consisting of the same repeated character are palindromes
+
+  // TODO property stating that a string of length <= 5 is a palindrome
+  // iff it is equal to its reverse (see lecture notes)
+
+  // TODO extra credit: see README
 }

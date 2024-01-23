@@ -8,18 +8,18 @@ import net.jqwik.api.constraints.*;
 public class PalindromeExamples {
 
   @Example
-  void testRadar() {
-    assertTrue(Palindrome.isPalindrome("radar"));
+  boolean testRadar() {
+    return Palindrome.isPalindrome("radar");
   }
 
   @Example
-  void testRadarC() {
-    assertFalse(Palindrome.isPalindrome("Radar"));
+  boolean testRadarC() {
+    return !Palindrome.isPalindrome("Radar");
   }
 
   @Example
-  void testRadarSp() {
-    assertFalse(Palindrome.isPalindrome("Rad a r"));
+  boolean testRadarSp() {
+    return !Palindrome.isPalindrome("Rad a r");
   }
 
   @Example
@@ -29,5 +29,6 @@ public class PalindromeExamples {
 
   // TODO add various other individual positive and negative 
   // examples based on radar, lidar, abba, and appl
-  // and testing all three palindrome checkers
+  // and testing all three palindrome checkers -
+  // TODO aim for a total of 20 examples including those above
 }

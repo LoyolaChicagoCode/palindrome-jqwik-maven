@@ -20,8 +20,8 @@ public class PalindromeTables {
 
   @Property
   @FromData("palindromeExamples")
-  void isPalindromeWorks(@ForAll String arg, @ForAll boolean result) {
-    assertEquals(result, Palindrome.isPalindrome(arg));
+  boolean isPalindromeWorks(@ForAll final String arg, @ForAll final boolean result) {
+    return Palindrome.isPalindrome(arg) == result;
   }
 
   // TODO test the other two palindrome checkers with the same table
