@@ -68,6 +68,8 @@ Succinctly answer the following questions in a separate document called Answer.m
 
 - Which of the NFRs listed above are dynamic or static, respectively?
 - Why is space performance important for a predicate like `isPalindrome`?
+- To what extent does the result of invoking one of these predicates depend on prior invocations?
+- Accordingly, what would be a relatively straightforward way to improve their performance?
 - What is an advantage of data-driven testing over example-based testing?
 - What is an advantage of property-based testing over example-based and data-driven testing?
 - Briefly discuss the pros and cons of a generate-and-check-based property as compared to a property based on a generator that generates test data more directly, such as the ones listed below under extra credit?
