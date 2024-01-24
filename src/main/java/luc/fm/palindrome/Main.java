@@ -7,7 +7,7 @@ public class Main {
   public static void main(final String[] args) {
     final var arg = String.join(" ", args);
     System.out.println("checking " + arg);
-    printResult(arg, Palindrome::isPalindrome, " a palindrome");
+    printResult(arg, Palindrome::isPalindrome, "a palindrome");
     // TODO add isPalindromeIgnoreCase -> "a case-insensitive palindrome."
     // TODO add isPalindromeIgnoreCaseAndSpaces -> "a case-intensitive palindrome when ignoring spaces."
   }

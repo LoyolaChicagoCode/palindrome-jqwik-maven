@@ -10,8 +10,10 @@ public class PalindromeTables {
   @Data
   Iterable<Tuple.Tuple2<String, Boolean>> palindromeExamples() {
     return Table.of(
+      Tuple.of("ab", false),
       Tuple.of("dad", true),
-      Tuple.of("kid", false)
+      Tuple.of("kid", false),
+      Tuple.of("abba", true)
     );
   }
 

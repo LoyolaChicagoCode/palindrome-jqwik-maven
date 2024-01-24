@@ -7,7 +7,10 @@ public enum Palindrome {;
   // It is OK to implement them in terms of each other as you see fit.
 
   public static boolean isPalindrome(final String arg) {
-    // TODO implement this method
+    // TODO fully implement this method
+    if (arg.length() <= 1) {
+      return true;
+    }
     return false;
   }
 
