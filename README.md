@@ -15,7 +15,7 @@ In this project, we'll use [jqwik](https://jqwik.net/) for practicing these styl
 
 Fix the various TODO items until all tests pass, including those you are about to add.
 
-❯ grep -r TODO src
+    ❯ grep -r TODO src
 
 
 ## Nonfunctional requirements
@@ -38,28 +38,49 @@ In addition, the project must meet these NFRs:
 The main program checks whether the command-line arguments form a palindrome. 
 When inspecting the main method, you'll see that it concatenates the command-line arguments to a single string with spaces in between.
 
-❯ sbt "run Rad a r"
-checking Rad a r
-Rad a r is not a palindrome.
-Rad a r is not a case-sensitive palindrome.
-Rad a r is a case-insensitive palindrome when ignoring spaces.
+    ❯ sbt "run Rad a r"
+    checking Rad a r
+    Rad a r is not a palindrome.
+    Rad a r is not a case-sensitive palindrome.
+    Rad a r is a case-insensitive palindrome when ignoring spaces.
+
+To speed up the process of running the main program repeatedly, be sure to first run `sbt` without arguments and then enter the run task at the sbt prompt as often as needed, e.g.,
+
+    ❯ sbt
+    ...
+    sbt> run
+    [info] running luc.fm.palindrome.Main
+    checking 
+     is a palindrome.
+    [success] Total time: 0 s, completed Jan 23, 2024, 11:46:42 PM
+    sbt> run x
+    [info] running luc.fm.palindrome.Main
+    checking x
+    x is a palindrome.
+    [success] Total time: 0 s, completed Jan 23, 2024, 11:47:42 PM
+
+When done, type `exit` or control-D at the sbt prompt.
 
 
 ## Running the tests
 
 You can run all the tests
 
-❯ sbt test
+    ❯ sbt test
 
 or a specific test, which is recommended while you're focusing on each specific part of the project
 
-❯ sbt "testOnly luc.fm.palindrome.PalindromeExamples"
+    ❯ sbt "testOnly luc.fm.palindrome.PalindromeExamples"
 
 When generating the coverage report using
 
-❯ sbt jacoco
+    ❯ sbt jacoco
 
 remember that there won't be a coverage report until all tests pass.
+
+As described above, you can speed things up dramatically by starting `sbt` without arguments and then running specific tasks at the sbt prompt, e.g.,
+
+    sbt> testOnly luc.fm.palindrome.PalindromeExamples
 
 
 ## Written part
