@@ -35,7 +35,7 @@ In addition, the project must meet these NFRs:
 
 ## Running the main program
 
-The main program checks whether the command-line arguments form a palindrome. 
+The main program checks whether the command-line arguments form a palindrome, defined as a string that reads the same way forward and backward, possibly considering or ignoring case and/or spaces. 
 When inspecting the main method, you'll see that it concatenates the command-line arguments to a single string with spaces in between.
 
     ❯ sbt "run Rad a r"
