@@ -1,6 +1,6 @@
 [![Java sbt CI](https://github.com/lucformalmethodscourse/palindrome-jqwik-java-sbt/actions/workflows/java-sbt.yml/badge.svg)](https://github.com/lucformalmethodscourse/palindrome-jqwik-java-sbt/actions/workflows/java-sbt.yml)
 
-# Unit testing using examples, tables, and properties
+# Stateless unit testing using examples, tables, and properties
 
 In this project, we'll use [jqwik](https://jqwik.net/) for practicing these styles of unit testing.
 
