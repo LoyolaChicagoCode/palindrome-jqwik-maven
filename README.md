@@ -36,7 +36,7 @@ In addition, the project must meet these NFRs:
 The main program checks whether the command-line arguments form a palindrome, defined as a string that reads the same way forward and backward, possibly considering or ignoring case and/or spaces. 
 When inspecting the main method, you'll see that it concatenates the command-line arguments to a single string with spaces in between.
 
-    ❯ mvn exec:java -Dexec.args="Rad a r"
+    ❯ mvn compile exec:java -Dexec.args="Rad a r"
     checking Rad a r
     Rad a r is not a palindrome.
     Rad a r is not a case-sensitive palindrome.
