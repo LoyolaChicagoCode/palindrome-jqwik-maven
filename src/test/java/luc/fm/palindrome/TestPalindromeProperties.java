@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import net.jqwik.api.*;
 import net.jqwik.api.constraints.*;
 
-public class PalindromeProperties {
+public class TestPalindromeProperties {
 
   // example: all strings of length 1 are palindromes
   @Property

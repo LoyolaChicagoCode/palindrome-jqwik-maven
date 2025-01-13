@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import net.jqwik.api.*;
 import net.jqwik.api.constraints.*;
 
-public class PalindromeTables {
+public class TestPalindromeTables {
 
   @Data
   Iterable<Tuple.Tuple2<String, Boolean>> palindromeExamples() {
